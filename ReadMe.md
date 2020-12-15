@@ -22,14 +22,51 @@ Webapp paths: sample 5 lines out of 1000 of the input file wordlist.txt
 Success status codes: [200, 302]
 
 
-### How it works
+### ABOUT
 ```
-placeholder variable declaration
-function to generate url from input and word
-possible multithread function
-processing and filling variables
-handling main action
-writing final output
+First approach
+This project takes:
+1.	A website URL which is needed to be checked
+2.	A file which contains completing URLs
+
+•	Website URL then takes contents from file(file.txt) and append it to complete the URL.
+•	Then using the code it pings to the site to check the success code.
+•	We are checking all the sites in completed URL but only printing which one are required.
+•	Then gives output on CLI
+
+How it works:
+•	Placeholder variable declaration: we are reading data from a file which needs placeholder variables
+
+•	Function to generate url from input and word : This function is appending the website url with the contents of file.txt to complete the URL
+
+
+•	Possible multithread function: A possible approach
+
+•	Processing and filling variables:  We have made all the URLs and saved it in a list 
+
+
+•	Handling main action: This is accepting the list of URLs and then by using request library we are pinging the websites URL and checking for status codes and storing the output in output.txt
+
+•	Writing final output: We are showing pinged site with the status code
+
+
+
+
+
+
+
+Optimized Approach:
+•	We used multithreading for this approach to make our code faster as our first approach was slower.
+•	Multithreading executes the different parts simultaneously by taking parts of the programs which are independent.
+•	It is a major optimization over the first approach.
+•	Basic parts of the project remains the same which are:
+o	Taking inputs 
+o	Creating placeholder variables
+o	Merging URLs
+o	Then providing outputs
+
+
+
 ```
 ## Usage:
 ```
