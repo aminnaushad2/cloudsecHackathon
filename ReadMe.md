@@ -49,12 +49,6 @@ How it works:
 
 •	Writing final output: We are showing pinged site with the status code
 
-
-
-
-
-
-
 Optimized Approach:
 •	We used multithreading for this approach to make our code faster as our first approach was slower.
 •	Multithreading executes the different parts simultaneously by taking parts of the programs which are independent.
